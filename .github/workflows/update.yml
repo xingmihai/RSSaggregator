@@ -18,11 +18,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'  # ✅ 改为 22
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install  # ✅ 改用 npm install（不依赖 lock 文件）
+        run: npm install
 
       - name: Fetch and aggregate feeds
         run: npm run update
