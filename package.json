@@ -1,0 +1,17 @@
+{
+  "name": "rss-aggregator",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "update": "node scripts/update.js",
+    "serve": "npx http-server public -p 3000"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0",
+    "fast-xml-parser": "^4.3.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
