@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "id": "hacker-news",
+      "title": "Hacker News",
+      "url": "https://hnrss.org/frontpage",
+      "category": "tech",
+      "limit": 15
+    },
+    {
+      "id": "vercel-blog",
+      "title": "Vercel Blog",
+      "url": "https://vercel.com/atom",
+      "category": "tech",
+      "limit": 10
+    },
+    {
+      "id": "cloudflare-blog",
+      "title": "Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/rss/",
+      "category": "tech",
+      "limit": 10
+    },
+    {
+      "id": "github-trending",
+      "title": "GitHub Trending (Rust)",
+      "url": "https://mshibanami.github.io/github-trending/feed/rust.xml",
+      "category": "open-source",
+      "limit": 15
+    },
+    {
+      "id": "lobsters",
+      "title": "Lobsters",
+      "url": "https://lobste.rs/rss",
+      "category": "tech",
+      "limit": 15
+    }
+  ]
+}
