@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  command = "npm run update && mkdir -p public/data && cp data/feed.json public/data/feed.json"
+
+[functions]
+  directory = "api"
+
+[[headers]]
+  for = "/data/feed.json"
+  [headers.values]
+    Cache-Control = "public, max-age=1800"
+
+[[scheduled]]
+  cron = "*/30 * * * *"
+  function = "update"
