@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📡 RSS Aggregator</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Aggregated Feed" href="/api/feed.xml">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📡 RSS Aggregator</h1>
+      <p class="subtitle">聚合多源 · 每 30 分钟自动更新</p>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="tech">技术</button>
+      <button class="filter-btn" data-filter="open-source">开源</button>
+      <button class="filter-btn" data-filter="news">资讯</button>
+      <input type="search" id="search" placeholder="🔍 搜索文章标题或来源...">
+    </nav>
+
+    <main id="feed-list" class="feed-list">
+      <div class="loading">加载中...</div>
+    </main>
+
+    <footer>
+      <p>Built with 💚 · Deployed on <span id="platform">Vercel</span></p>
+      <p><a href="/api/feed.xml">📡 RSS 订阅</a> · <a href="https://github.com/yourname/rss-aggregator" target="_blank">源码</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
