@@ -1,0 +1,15 @@
+{
+  "buildCommand": "echo 'Static build - no build needed'",
+  "outputDirectory": "public",
+  "functions": {
+    "api/cron/update.js": {
+      "maxDuration": 60
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/update",
+      "schedule": "*/30 * * * *"
+    }
+  ]
+}
