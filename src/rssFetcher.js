@@ -5,7 +5,10 @@ const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '@_',
   cdataPropName: '__cdata',
-  trimValues: true
+  trimValues: true,
+  processEntities: false,        // ✅ 关闭实体处理
+  stopNodes: ['*.description'],  // ✅ 跳过长文本解析
+  maxTextLength: 10_000_000      // ✅ 提高文本长度限制
 });
 
 /**
