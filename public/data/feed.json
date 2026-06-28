@@ -1,0 +1,554 @@
+{
+  "items": [
+    {
+      "id": "https://lobste.rs/s/klkabn",
+      "title": "The Old Computer Challenge",
+      "link": "http://occ.sdf.org/",
+      "summary": "Comments",
+      "author": "occ.sdf.org via msangi",
+      "pubDate": "2026-06-27T22:21:56.000Z",
+      "categories": [
+        "hardware",
+        "retrocomputing"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48702273",
+      "title": "",
+      "link": "https://evilbit.de/dns-resolver-guide.html",
+      "summary": "",
+      "author": "pawal",
+      "pubDate": "2026-06-27T22:11:28.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48702104",
+      "title": "",
+      "link": "https://starglyphs.com",
+      "summary": "",
+      "author": "telman17",
+      "pubDate": "2026-06-27T21:50:32.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48702060",
+      "title": "",
+      "link": "https://www.msn.com/en-us/money/general/michigan-spent-1-8-billion-and-only-created-602-jobs/ar-AA26Cusu",
+      "summary": "",
+      "author": "littlexsparkee",
+      "pubDate": "2026-06-27T21:44:57.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48701936",
+      "title": "",
+      "link": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+      "summary": "",
+      "author": "shirozuki",
+      "pubDate": "2026-06-27T21:27:36.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/51qnh7",
+      "title": "The feature in OxCaml that more languages should steal",
+      "link": "https://theconsensus.dev/p/2026/06/27/the-feature-in-oxcaml-more-languages-should-steal.html",
+      "summary": "Comments",
+      "author": "theconsensus.dev via vaguelytagged",
+      "pubDate": "2026-06-27T21:07:28.000Z",
+      "categories": [
+        "ml"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48701512",
+      "title": "",
+      "link": "https://github.com/kageroumado/adrafinil",
+      "summary": "",
+      "author": "kageroumado",
+      "pubDate": "2026-06-27T20:34:53.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/bgnc5q",
+      "title": "Prism: An Impure Functional Language With Typed Effects",
+      "link": "https://www.stephendiehl.com/posts/prism/",
+      "summary": "Comments",
+      "author": "stephendiehl.com via jcmkk3",
+      "pubDate": "2026-06-27T19:39:10.000Z",
+      "categories": [
+        "plt"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48700834",
+      "title": "",
+      "link": "https://ipcrawl.com/",
+      "summary": "",
+      "author": "arm32",
+      "pubDate": "2026-06-27T19:09:49.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48699928",
+      "title": "",
+      "link": "https://cauenapier.com/blog/townsquare_release/",
+      "summary": "",
+      "author": "eustoria",
+      "pubDate": "2026-06-27T17:11:20.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/q7e7hp",
+      "title": "C in the Linux Kernel",
+      "link": "https://www.youtube.com/watch?v=iqqf8YWJhSs",
+      "summary": "Comments",
+      "author": "youtube.com via hugoarnal",
+      "pubDate": "2026-06-27T17:09:07.000Z",
+      "categories": [
+        "video",
+        "c",
+        "linux",
+        "osdev"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48699842",
+      "title": "",
+      "link": "https://jobs.ashbyhq.com/supabase/2e718684-4f75-4a99-8d6b-3b6bd44e4228",
+      "summary": "",
+      "author": "awalias",
+      "pubDate": "2026-06-27T17:00:15.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/b2emi7",
+      "title": "Guards! Guards",
+      "link": "https://hauleth.dev/post/guards-guards/",
+      "summary": "Comments",
+      "author": "hauleth.dev by hauleth",
+      "pubDate": "2026-06-27T16:19:10.000Z",
+      "categories": [
+        "elixir"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://lobste.rs/s/boap41",
+      "title": "A peek into Reddit's anti-spam internals",
+      "link": "https://lyra.horse/blog/2026/06/reddit-spam-internals/",
+      "summary": "Comments",
+      "author": "lyra.horse by rebane2001",
+      "pubDate": "2026-06-27T15:10:14.000Z",
+      "categories": [
+        "security",
+        "privacy"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48698684",
+      "title": "",
+      "link": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "summary": "",
+      "author": "HotGarbage",
+      "pubDate": "2026-06-27T14:38:05.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48698617",
+      "title": "",
+      "link": "https://github.com/bikini/exploitarium",
+      "summary": "",
+      "author": "binyu",
+      "pubDate": "2026-06-27T14:31:00.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/ciwbiq",
+      "title": "Linux 7.2 Improves Anonymous/Unnamed Pipe Performance For Shell Pipelines & More",
+      "link": "https://www.phoronix.com/news/Linux-72-Faster-Anon-Pipe-Write",
+      "summary": "Comments",
+      "author": "phoronix.com via lcapaldo",
+      "pubDate": "2026-06-27T14:29:27.000Z",
+      "categories": [
+        "linux"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48698559",
+      "title": "",
+      "link": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
+      "summary": "",
+      "author": "Versipelle",
+      "pubDate": "2026-06-27T14:23:40.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/xmsj3r",
+      "title": "Data Access Patterns That Makes Your CPU Really Angry",
+      "link": "https://blog.weineng.me/posts/slowest_add/",
+      "summary": "Comments",
+      "author": "blog.weineng.me by weineng",
+      "pubDate": "2026-06-27T14:18:23.000Z",
+      "categories": [
+        "c",
+        "c++",
+        "performance"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48698188",
+      "title": "",
+      "link": "https://foxmoss.com/blog/radish/",
+      "summary": "",
+      "author": "foxmoss",
+      "pubDate": "2026-06-27T13:36:45.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48698151",
+      "title": "",
+      "link": "https://danluu.com/discontinuities/",
+      "summary": "",
+      "author": "tosh",
+      "pubDate": "2026-06-27T13:32:20.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48697958",
+      "title": "",
+      "link": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "summary": "",
+      "author": "bogdiyan",
+      "pubDate": "2026-06-27T13:10:21.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/z7eoo7",
+      "title": "Excessive nil pointer checks in Go",
+      "link": "https://konradreiche.com/blog/excessive-nil-pointer-checks-in-go/",
+      "summary": "Comments",
+      "author": "konradreiche.com via eduard",
+      "pubDate": "2026-06-27T12:53:26.000Z",
+      "categories": [
+        "go"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://lobste.rs/s/oaq69a",
+      "title": "Shard your locks: benchmarking 6 Go cache designs",
+      "link": "https://strebkov.dev/posts/shard-your-locks/",
+      "summary": "Comments",
+      "author": "strebkov.dev via klingtnet",
+      "pubDate": "2026-06-27T12:40:25.000Z",
+      "categories": [
+        "go",
+        "performance"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://news.ycombinator.com/item?id=48697560",
+      "title": "",
+      "link": "https://www.openra.net/",
+      "summary": "",
+      "author": "tosh",
+      "pubDate": "2026-06-27T12:10:27.000Z",
+      "categories": [],
+      "sourceId": "hacker-news",
+      "sourceTitle": "Hacker News: Front Page"
+    },
+    {
+      "id": "https://lobste.rs/s/zxt3em",
+      "title": "OpenZL",
+      "link": "https://openzl.org/",
+      "summary": "Comments",
+      "author": "openzl.org via gmem",
+      "pubDate": "2026-06-27T09:02:59.000Z",
+      "categories": [
+        "compsci",
+        "performance"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://lobste.rs/s/klhhzq",
+      "title": "FIFA Interactive Bracket (World Cup)",
+      "link": "https://worldcup.reeseric.ci",
+      "summary": "A working fork of https://worldcup.cole.ws for 2026! Comments",
+      "author": "worldcup.reeseric.ci by reesericci",
+      "pubDate": "2026-06-27T07:54:36.000Z",
+      "categories": [
+        "web",
+        "show"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://lobste.rs/s/u1clgf",
+      "title": "Text files as a user interface",
+      "link": "https://ratfactor.com/cards/text-files-as-ui",
+      "summary": "Comments",
+      "author": "ratfactor.com via sloanelybutsurely",
+      "pubDate": "2026-06-27T03:56:22.000Z",
+      "categories": [
+        "practices",
+        "programming"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "https://lobste.rs/s/s138jl",
+      "title": "NLNet Labs LLM Policy",
+      "link": "https://nlnetlabs.nl/llm-policy/",
+      "summary": "Comments",
+      "author": "nlnetlabs.nl via David_Gerard",
+      "pubDate": "2026-06-27T00:08:45.000Z",
+      "categories": [
+        "vibecoding"
+      ],
+      "sourceId": "lobsters",
+      "sourceTitle": "Lobsters"
+    },
+    {
+      "id": "6BmERiKIIt4pIJoFmNy7Jn",
+      "title": "",
+      "link": "https://blog.cloudflare.com/rollbacks-for-workflows/",
+      "summary": "",
+      "author": [
+        "Vaishnav Kavitha",
+        "Mia Malden",
+        "André Venceslau"
+      ],
+      "pubDate": "2026-06-25T13:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "77AgsHNNnpUDvP0Z6gqgp6",
+      "title": "",
+      "link": "https://blog.cloudflare.com/oauth-for-all/",
+      "summary": "",
+      "author": [
+        "Sam Cabell",
+        "Mike Escalante",
+        "Adam Bouhmad",
+        "Nick Comer"
+      ],
+      "pubDate": "2026-06-24T06:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "6ecffq4Al52D0ka1U4p2OR",
+      "title": "",
+      "link": "https://blog.cloudflare.com/post-quantum-eo-2026/",
+      "summary": "",
+      "author": [
+        "Sharon Goldberg",
+        "Vincent Voci"
+      ],
+      "pubDate": "2026-06-23T18:25:18.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "5X4Vz9KDcjIBXgHIFSuJFZ",
+      "title": "",
+      "link": "https://blog.cloudflare.com/hyper-bug/",
+      "summary": "",
+      "author": [
+        "Deanna Lam",
+        "Diretnan Domnan",
+        "Matt Lewis"
+      ],
+      "pubDate": "2026-06-22T18:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "2EKaG8rvH4FLnpEQVgvJ4I",
+      "title": "",
+      "link": "https://blog.cloudflare.com/temporary-accounts/",
+      "summary": "",
+      "author": [
+        "Sid Chatterjee",
+        "Celso Martinho",
+        "Brendan Irvine-Broque"
+      ],
+      "pubDate": "2026-06-19T13:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "5Ad3Svz0xFxJQNx6eQZjJP",
+      "title": "",
+      "link": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
+      "summary": "",
+      "author": [
+        "Dan Jones",
+        "Alexandra Godoi",
+        "Grant Bourzikas"
+      ],
+      "pubDate": "2026-06-18T17:59:40.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "1kBoofDb8dfLiYnekjlUaX",
+      "title": "",
+      "link": "https://blog.cloudflare.com/celebrating-12-years-of-project-galileo/",
+      "summary": "",
+      "author": [
+        "Jocelyn Woolbright",
+        "Allie Funk",
+        "Grace Bennett"
+      ],
+      "pubDate": "2026-06-18T13:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "48yPgdpb7RGTBdh4DPPCUF",
+      "title": "",
+      "link": "https://blog.cloudflare.com/agents-platform-flue-sdk/",
+      "summary": "",
+      "author": "Thomas Gauvin",
+      "pubDate": "2026-06-17T19:35:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "1LDBKUul6cfW72f1DQaLyE",
+      "title": "",
+      "link": "https://blog.cloudflare.com/cloudflare-one-stack/",
+      "summary": "",
+      "author": [
+        "AJ Gerstenhaber",
+        "Abe Carryl"
+      ],
+      "pubDate": "2026-06-17T13:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    },
+    {
+      "id": "1Ng3fFBbnnbu6qxP1HMqpB",
+      "title": "",
+      "link": "https://blog.cloudflare.com/dmarc-management-ga/",
+      "summary": "",
+      "author": "Ayush Kumar",
+      "pubDate": "2026-06-16T13:00:00.000Z",
+      "categories": [],
+      "sourceId": "cloudflare-blog",
+      "sourceTitle": {
+        "__cdata": " The Cloudflare Blog "
+      }
+    }
+  ],
+  "errors": [
+    {
+      "ok": false,
+      "source": {
+        "id": "vercel-blog",
+        "title": "Vercel Blog",
+        "url": "https://vercel.com/atom",
+        "category": "tech",
+        "limit": 10
+      },
+      "error": "Entity expansion limit exceeded: 1001 > 1000"
+    },
+    {
+      "ok": false,
+      "source": {
+        "id": "github-trending",
+        "title": "GitHub Trending (Rust)",
+        "url": "https://mshibanami.github.io/github-trending/feed/rust.xml",
+        "category": "open-source",
+        "limit": 15
+      },
+      "error": "HTTP 404 Not Found"
+    }
+  ],
+  "stats": {
+    "sources": 5,
+    "success": 3,
+    "failed": 2,
+    "items": 39,
+    "updatedAt": "2026-06-28T00:01:57.123Z"
+  }
+}
