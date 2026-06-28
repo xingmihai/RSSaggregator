@@ -1,5 +1,5 @@
 // scripts/update.js
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { aggregate } from '../src/aggregator.js';
 
 async function main() {
@@ -11,18 +11,17 @@ async function main() {
 
   const result = await aggregate(config.sources);
 
+  // 确保目录存在
+  mkdirSync(new URL('../data/', import.meta.url), { recursive: true });
+  mkdirSync(new URL('../public/data/', import.meta.url), { recursive: true });
+
   // 输出到 data/feed.json
   const outputPath = new URL('../data/feed.json', import.meta.url);
   writeFileSync(outputPath, JSON.stringify(result, null, 2), 'utf-8');
 
-  // 同时复制到 public/data/feed.json（部署时会包含）
+  // 同时复制到 public/data/feed.json
   const publicPath = new URL('../public/data/feed.json', import.meta.url);
-  try {
-    writeFileSync(publicPath, JSON.stringify(result, null, 2), 'utf-8');
-  } catch (err) {
-    // 如果 public 不存在则跳过
-    console.warn('⚠️  public/data/feed.json not written:', err.message);
-  }
+  writeFileSync(publicPath, JSON.stringify(result, null, 2), 'utf-8');
 
   console.log(`✅ Done in ${((Date.now() - start) / 1000).toFixed(2)}s`);
   console.log(`📊 Stats:`, result.stats);
