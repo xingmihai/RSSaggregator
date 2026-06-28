@@ -6,14 +6,13 @@ const parser = new XMLParser({
   attributeNamePrefix: '@_',
   cdataPropName: '__cdata',
   trimValues: true,
-  processEntities: false,        // ✅ 关闭实体处理
-  stopNodes: ['*.description'],  // ✅ 跳过长文本解析
-  maxTextLength: 10_000_000      // ✅ 提高文本长度限制
+  processEntities: false,
+  stopNodes: ['*.description', '*.content', '*.summary'],
+  maxTextLength: 10_000_000
 });
 
 /**
  * 通用 RSS / Atom 抓取与解析
- * @param {Object} source - { id, url, title, limit }
  */
 export async function fetchFeed(source) {
   const controller = new AbortController();
@@ -23,8 +22,14 @@ export async function fetchFeed(source) {
     const response = await fetch(source.url, {
       signal: controller.signal,
       headers: {
-        'User-Agent': 'RSS-Aggregator/1.0 (+https://github.com/yourname/rss-aggregator)',
-        'Accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.9, */*;q=0.8',
+        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache',
+        // ✅ 关键：添加 Referer，部分站点会检查
+        'Referer': new URL(source.url).origin
       }
     });
 
@@ -41,11 +46,8 @@ export async function fetchFeed(source) {
   }
 }
 
-/**
- * 将 RSS 2.0 / Atom 1.0 标准化为统一格式
- */
+// normalizeFeed / stripHtml / parseDate 等函数保持不变
 function normalizeFeed(data, source) {
-  // RSS 2.0
   if (data.rss?.channel) {
     const channel = data.rss.channel;
     const items = Array.isArray(channel.item) ? channel.item : [channel.item].filter(Boolean);
@@ -64,7 +66,6 @@ function normalizeFeed(data, source) {
     };
   }
 
-  // Atom 1.0
   if (data.feed?.entry) {
     const entries = Array.isArray(data.feed.entry) ? data.feed.entry : [data.feed.entry];
     return {
@@ -87,7 +88,6 @@ function normalizeFeed(data, source) {
 
 function stripHtml(html) {
   if (typeof html !== 'string') return '';
-  // 保留 CDATA 文本，去除 HTML 标签
   const withLineBreaks = html
     .replace(/<\/(p|br|div|li|h[1-6])>/gi, '\n')
     .replace(/<br\s*\/?>/gi, '\n');
@@ -118,7 +118,6 @@ function extractCategories(cat) {
 }
 
 function cryptoHash(str) {
-  // 简单 ID 生成（无依赖版）
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
