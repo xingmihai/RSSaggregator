@@ -1,46 +1,25 @@
 {
   "sources": [
     {
-      "id": "hacker-news",
-      "title": "Hacker News",
-      "url": "https://hnrss.org/frontpage",
+      "id": "xmhai",
+      "title": "星觅海博客",
+      "url": "https://www.xmhai.cn/rss.xml",
       "category": "tech",
       "limit": 15
     },
     {
-      "id": "cloudflare-blog",
-      "title": "Cloudflare Blog",
-      "url": "https://blog.cloudflare.com/rss/",
-      "category": "tech",
-      "limit": 10
-    },
-    {
-      "id": "lobsters",
-      "title": "Lobsters",
-      "url": "https://lobste.rs/rss",
+      "id": "xiaow-blog",
+      "title": "Xiaow Blog",
+      "url": "https://blog.xiaow.qzz.io/rss.xml",
       "category": "tech",
       "limit": 15
     },
     {
-      "id": "vercel-blog",
-      "title": "Vercel Blog",
-      "url": "https://vercel.com/atom",
+      "id": "vvhan",
+      "title": "韩小韩博客",
+      "url": "https://www.vvhan.com/rss.xml",
       "category": "tech",
-      "limit": 10
-    },
-    {
-      "id": "github-trending-js",
-      "title": "GitHub Trending (JS)",
-      "url": "https://mshibanami.github.io/github-trending/feed/javascript.xml",
-      "category": "open-source",
       "limit": 15
-    },
-    {
-    "id": "xingmihai"
-    "title": "一起慢慢进步"
-    "url": "https://www.xmhai.cn/rss.xml"
-    "category": "blog"
-    "limit": 15
     }
   ]
 }
