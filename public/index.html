@@ -3,35 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📡 RSS Aggregator</title>
+  <meta name="theme-color" content="#6366f1">
+  <title>📡 RSS Hub · 聚合阅读</title>
   <link rel="stylesheet" href="/style.css">
-  <link rel="alternate" type="application/rss+xml" title="Aggregated Feed" href="/api/feed.xml">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+  <link rel="alternate" type="application/rss+xml" title="Aggregated RSS" href="/data/feed.json">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>📡 RSS Aggregator</h1>
-      <p class="subtitle">聚合多源 · 每 30 分钟自动更新</p>
-      <div class="stats" id="stats"></div>
-    </header>
+  <!-- 顶部导航 -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">📡</span>
+        <div>
+          <h1 class="logo-title">RSS Hub</h1>
+          <p class="logo-subtitle">聚合阅读 · 每日更新</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="切换主题">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="refresh-btn" class="icon-btn" aria-label="刷新">
+          <span class="refresh-icon">🔄</span>
+        </button>
+      </div>
+    </div>
 
-    <nav class="filters">
-      <button class="filter-btn active" data-filter="all">全部</button>
-      <button class="filter-btn" data-filter="tech">技术</button>
-      <button class="filter-btn" data-filter="open-source">开源</button>
-      <button class="filter-btn" data-filter="news">资讯</button>
-      <input type="search" id="search" placeholder="🔍 搜索文章标题或来源...">
-    </nav>
+    <!-- 统计卡片 -->
+    <div class="stats-bar" id="stats-bar">
+      <div class="stat-item">
+        <span class="stat-icon">📚</span>
+        <div>
+          <div class="stat-value" id="stat-sources">-</div>
+          <div class="stat-label">订阅源</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">📰</span>
+        <div>
+          <div class="stat-value" id="stat-items">-</div>
+          <div class="stat-label">篇文章</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🕒</span>
+        <div>
+          <div class="stat-value" id="stat-time">-</div>
+          <div class="stat-label">更新时间</div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main id="feed-list" class="feed-list">
-      <div class="loading">加载中...</div>
-    </main>
+  <main class="container">
+    <!-- 搜索 + 筛选 -->
+    <section class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="search" placeholder="搜索文章标题或来源..." autocomplete="off">
+        <button id="clear-search" class="clear-btn" aria-label="清空">✕</button>
+      </div>
 
-    <footer>
-      <p>Built with 💚 · Deployed on <span id="platform">Vercel</span></p>
-      <p><a href="/api/feed.xml">📡 RSS 订阅</a> · <a href="https://github.com/yourname/rss-aggregator" target="_blank">源码</a></p>
-    </footer>
-  </div>
+      <div class="filter-chips" id="filter-chips">
+        <button class="chip active" data-filter="all">
+          <span>全部</span>
+          <span class="chip-count" id="count-all">0</span>
+        </button>
+        <!-- 动态生成来源筛选 -->
+      </div>
+
+      <div class="sort-bar">
+        <span class="sort-label">排序：</span>
+        <button class="sort-btn active" data-sort="time">最新</button>
+        <button class="sort-btn" data-sort="source">来源</button>
+      </div>
+    </section>
+
+    <!-- 文章列表 -->
+    <section class="feed-grid" id="feed-grid">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>加载中...</p>
+      </div>
+    </section>
+
+    <!-- 空状态 -->
+    <template id="empty-template">
+      <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <h3>暂无内容</h3>
+        <p>尝试调整搜索或筛选条件</p>
+      </div>
+    </template>
+
+    <!-- 文章卡片模板 -->
+    <template id="card-template">
+      <article class="card">
+        <div class="card-meta">
+          <span class="card-source"></span>
+          <span class="card-date"></span>
+        </div>
+        <h3 class="card-title">
+          <a target="_blank" rel="noopener noreferrer"></a>
+        </h3>
+        <p class="card-summary"></p>
+        <div class="card-footer">
+          <span class="card-author"></span>
+          <span class="card-arrow">→</span>
+        </div>
+      </article>
+    </template>
+  </main>
+
+  <footer class="footer">
+    <p>Built with 💚 · Powered by GitHub Actions</p>
+    <p class="footer-links">
+      <a href="/data/feed.json" target="_blank">📡 JSON Feed</a>
+      <span>·</span>
+      <a href="https://github.com/xingmihai/RSSaggregator" target="_blank" rel="noopener noreferrer">⭐ Source</a>
+    </p>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button id="back-to-top" class="back-to-top" aria-label="返回顶部">↑</button>
 
   <script type="module" src="/app.js"></script>
 </body>
