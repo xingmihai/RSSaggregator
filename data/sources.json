@@ -8,13 +8,6 @@
       "limit": 15
     },
     {
-      "id": "vercel-blog",
-      "title": "Vercel Blog",
-      "url": "https://vercel.com/atom",
-      "category": "tech",
-      "limit": 10
-    },
-    {
       "id": "cloudflare-blog",
       "title": "Cloudflare Blog",
       "url": "https://blog.cloudflare.com/rss/",
@@ -22,18 +15,32 @@
       "limit": 10
     },
     {
-      "id": "github-trending",
-      "title": "GitHub Trending (Rust)",
-      "url": "https://mshibanami.github.io/github-trending/feed/rust.xml",
-      "category": "open-source",
-      "limit": 15
-    },
-    {
       "id": "lobsters",
       "title": "Lobsters",
       "url": "https://lobste.rs/rss",
       "category": "tech",
       "limit": 15
+    },
+    {
+      "id": "vercel-blog",
+      "title": "Vercel Blog",
+      "url": "https://vercel.com/atom",
+      "category": "tech",
+      "limit": 10
+    },
+    {
+      "id": "github-trending-js",
+      "title": "GitHub Trending (JS)",
+      "url": "https://mshibanami.github.io/github-trending/feed/javascript.xml",
+      "category": "open-source",
+      "limit": 15
+    },
+    {
+    "id": "xingmihai"
+    "title": "一起慢慢进步"
+    "url": "https://www.xmhai.cn/rss.xml"
+    "category": "blog"
+    "limit": 15
     }
   ]
 }
