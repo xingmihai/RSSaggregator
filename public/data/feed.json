@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "id": "https://blog.xiaow.qzz.io/article/ip-signature-card/",
+      "title": "分享一个IP签名档/IP卡片源码",
+      "link": "https://blog.xiaow.qzz.io/article/ip-signature-card/",
+      "summary": "前言每次有人打开你的博客，底部挂着张图，图上显示TA自己的IP、所在城市、实时天气、用的什么系统和浏览器——这种小东西挺有意思的。效果大概长这样：上面这是美化版的，下面是正常版的预览部署不算复杂，前后半小时搞定。你需要什么一台Linux服务器（1C1G够用）PHP8.0+，带GD、curl、mbst",
+      "author": "笑的博客",
+      "pubDate": "2026-07-05T01:06:35.000Z",
+      "categories": [],
+      "sourceId": "xiaow-blog",
+      "sourceTitle": "笑的博客"
+    },
+    {
       "id": "https://blog.xiaow.qzz.io/article/friend-link-manager/",
       "title": "弄了一个专为vh-astro博客设计的友链管理系统，把烦人操作全扔了",
       "link": "https://blog.xiaow.qzz.io/article/friend-link-manager/",
@@ -161,17 +172,6 @@
       "summary": "在GooglePlay里发现了一款应用，名字叫KukuTV，还是三哥写的，可惜评分只有0.0下载下来之后，一点进去就直接给我弹了两个窗：好嘛，不就是谷歌服务校验吗？今天我就要手撕它。第一个弹出的黑色窗口是软件自带的，第二个弹出的白色窗口则是谷歌官方的。两个窗口均用于谷歌服务校验。今天主要分析的是第二",
       "author": "笑的博客",
       "pubDate": "2025-12-27T09:35:46.000Z",
-      "categories": [],
-      "sourceId": "xiaow-blog",
-      "sourceTitle": "笑的博客"
-    },
-    {
-      "id": "https://blog.xiaow.qzz.io/article/free-domain-name-dpdns/",
-      "title": "【免费域名】永久免费！零成本拥有一个属于自己的域名！",
-      "link": "https://blog.xiaow.qzz.io/article/free-domain-name-dpdns/",
-      "summary": "免费域名注册与订阅提醒系统搭建指南本服务永久免费，但需每180天续订一次（续订免费），续订后可再用365天。当剩余天数不足180天时可再次续费。总花费：0元人民币末尾附视频教程第一步：注册免费域名1.查询域名可用性访问DPDNS官网，在搜索框中输入想要的域名。注意：域名后缀必须为.dpdns.org",
-      "author": "笑的博客",
-      "pubDate": "2025-12-13T19:18:36.000Z",
       "categories": [],
       "sourceId": "xiaow-blog",
       "sourceTitle": "笑的博客"
@@ -349,6 +349,6 @@
     "success": 2,
     "failed": 1,
     "items": 30,
-    "updatedAt": "2026-07-04T16:31:58.342Z"
+    "updatedAt": "2026-07-04T18:04:10.290Z"
   }
 }
